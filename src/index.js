@@ -31,13 +31,21 @@
 // const val3 = "constは再宣言できない";
 // console.log(val3);
 
-const val4 = {
-  name: "じゃけえ",
-  age: 28
-};
-console.log(val4);
-val4.gen = "men";
-val4.name = "jakee";
-val4.address = "大阪";
+// constで定義したオブジェクトはプロパティ変更が可能
+// const val4 = {
+//   name: "じゃけえ",
+//   age: 28
+// };
+// console.log(val4);
+// val4.gen = "men";
+// val4.name = "jakee";
+// val4.address = "大阪";
 
-console.log(val4);
+// console.log(val4);
+
+// ＊＊＊＊
+const val5 = ["dog", "cat"];
+val5[0] = "bird";
+val5[1] = "ぞう";
+val5.push("あしか");
+console.log(val5);
