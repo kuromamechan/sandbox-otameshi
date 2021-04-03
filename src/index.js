@@ -36,3 +36,8 @@ const val4 = {
   age: 28
 };
 console.log(val4);
+val4.gen = "men";
+val4.name = "jakee";
+val4.address = "大阪";
+
+console.log(val4);
