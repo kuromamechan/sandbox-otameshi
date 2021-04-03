@@ -22,5 +22,17 @@
 // let val2 = "letは再宣言できない";
 // console.log(val2);
 
-const val3 = "const変数";
-console.log(val3);
+// const val3 = "const変数";
+// console.log(val3);
+
+// // val3 = "const変数は上書きも再宣言もできない";
+// // console.log(val3);
+
+// const val3 = "constは再宣言できない";
+// console.log(val3);
+
+const val4 = {
+  name: "じゃけえ",
+  age: 28
+};
+console.log(val4);
