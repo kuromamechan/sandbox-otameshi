@@ -142,6 +142,34 @@
 // sumFunc(...arr1);
 
 // まとめる
-const arr4 = [1, 2, 3, 4, 5];
-const [num1, num2, ...arr5] = arr4;
-console.log(num1, num2, ...arr5);
+// const arr4 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr5] = arr4;
+// console.log(num1, num2, ...arr5);
+// console.log(num2);
+// console.log(arr5);
+
+// 配列のコピー結合
+
+const arr6 = [10, 20];
+const arr7 = [30, 40];
+
+// const arr8 = [...arr6];
+// console.log(arr6);
+// console.log(arr8);
+
+// スプレットを使わずコピーした場合
+// 連結した箱の値を変えると元の箱も置き換わってしまう。
+// const arr8 = arr6;
+// console.log(arr8);
+// arr8[0] = 200;
+// console.log(arr6);
+
+// コピーではなく　「...」構文を使う
+const arr9 = [...arr6, ...arr7];
+console.log(arr9);
+arr9[1] = 400;
+console.log(arr9);
+console.log(arr6);
+/**
+ *
+ */
