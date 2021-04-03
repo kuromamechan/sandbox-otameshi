@@ -204,12 +204,27 @@
 
 // nameArr.map((name, index) => console.log(`${index + 1}番は、${name}です`));
 
-const nameArr = ["田中", "山田", "じゃけえ"];
-const newNameArr = nameArr.map((name) => {
-  if (name === "じゃけえ") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArr);
+// const nameArr = ["田中", "山田", "じゃけえ"];
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "じゃけえ") {
+//     return `${name}殿`;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+// ある条件？　条件がtrueの時、条件がfalseの時
+// const val1 = 1 < 0 ? 'tureです' : 'falseです';
+// console.log(val1);
+
+// const num = '1300';
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
+};
+console.log(checkSum(5, 40));
+console.log(checkSum(20, 100));
