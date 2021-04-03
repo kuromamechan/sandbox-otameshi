@@ -106,16 +106,42 @@
 // const message2 = `名前は${name}です。年齢は、${age}です。`;
 // console.log(message2);
 
-const myProfile = ["じゃけえ", 28];
-const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳ですね。`;
+// const myProfile = ["じゃけえ", 28];
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳ですね。`;
 
-console.log(message3);
+// console.log(message3);
 
-const [nana, aag] = myProfile;
-const message4 = `名前は${nana}です。年齢は${aag}歳ですね。`;
+// const [nana, aag] = myProfile;
+// const message4 = `名前は${nana}です。年齢は${aag}歳ですね。`;
 
-console.log(message4);
+// console.log(message4);
 
 /**
- *
+ *デフォルト値　引数など
  */
+
+// const sayHello = (name = "ゲスト") => {
+//   return console.log(`こんにちは！${name}さん！`);
+// };
+// sayHello("じゃけえ");
+
+/**
+ * スプレット構文
+ */
+// 配列の展開
+// const arr1 = [1, 2];
+// // console.log(arr1);
+// // console.log(...arr1);
+
+// const sumFunc = (arr2,arr3) => {
+//   return console.log(arr2 + arr3);
+// };
+// // console.log(sumFunc(3,4));
+// // sumFunc(arr1[0],arr1[1]);
+
+// sumFunc(...arr1);
+
+// まとめる
+const arr4 = [1, 2, 3, 4, 5];
+const [num1, num2, ...arr5] = arr4;
+console.log(num1, num2, ...arr5);
