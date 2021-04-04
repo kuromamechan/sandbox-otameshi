@@ -223,8 +223,38 @@
 
 // const num = '1300';
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
-};
-console.log(checkSum(5, 40));
-console.log(checkSum(20, 100));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
+// };
+// console.log(checkSum(5, 40));
+// console.log(checkSum(20, 100));
+
+/**
+ * 論理演算しの本当の意味を知ろう
+ */
+//
+// const flag1 = true;
+// const flag2 = true;
+// // const flag2 = false;
+// const flag1 = false;
+
+// if (flag1 || flag2) {
+//   console.log("1か2はTrueになります");
+// }
+// if (flag1 && flag2){
+//   console.log("1も2もtrueになります");
+// }
+
+//  ||は、左側が　falseなら右側を返す
+// const num = null;
+// const num = null;
+// const num = 100;
+// // const fee = num && "金額が入っています";
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+//  &&は、左が　trueなら右側を返す
+// const num2 = 10;
+const num2 = null;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
